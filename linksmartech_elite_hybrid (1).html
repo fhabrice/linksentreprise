@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linksmartech Elite | Portail Institutionnel & E-Commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
+        .carousel-container { scroll-behavior: smooth; scrollbar-width: none; }
+        .carousel-container::-webkit-scrollbar { display: none; }
+        .hover-lift:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .active-tab { border-bottom: 3px solid #eab308; color: white; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <div class="bg-slate-950 text-slate-400 text-xs py-2 px-6 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <span class="font-mono uppercase tracking-widest">RCCM: CD-GOM-01-2024-A-002698</span>
+            <div class="flex gap-6">
+                <span>📍 Goma, RDC</span>
+                <span class="font-bold text-yellow-500">📞 +243 976 459 970</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bg-white sticky top-0 z-50 shadow-sm border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-blue-900 rounded flex items-center justify-center text-white font-bold text-xl">L</div>
+                <h1 class="text-2xl font-extrabold text-slate-950 tracking-tighter uppercase">LINKS<span class="text-blue-700">MARTECH</span></h1>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-bold text-slate-700 uppercase tracking-wide">
+                <a href="#" class="hover:text-blue-900 transition">Accueil</a>
+                <a href="#shop" class="hover:text-blue-900 transition">Boutique</a>
+                <a href="#services" class="hover:text-blue-900 transition">Services</a>
+                <a href="#contact" class="hover:text-blue-900 transition">Contact</a>
+            </div>
+            <button class="bg-blue-900 text-white px-6 py-2 rounded font-bold text-sm hover:bg-blue-800 transition shadow-lg shadow-blue-900/20">Portail Client</button>
+        </div>
+    </nav>
+
+    <header id="shop" class="hero-gradient py-16 px-6 text-white relative">
+        <div class="max-w-7xl mx-auto">
+            <!-- Tabs Switcher -->
+            <div class="flex gap-8 mb-10 border-b border-white/10 pb-4">
+                <button onclick="switchShop('local')" id="tab-local" class="active-tab text-lg font-bold pb-2 transition">Produits Nationaux</button>
+                <button onclick="switchShop('intl')" id="tab-intl" class="text-lg font-bold pb-2 text-slate-400 hover:text-white transition">Solutions Internationales</button>
+            </div>
+
+            <!-- Content Container -->
+            <div id="hero-content" class="flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1" id="text-content">
+                    <span id="badge-text" class="bg-yellow-500 text-slate-950 px-3 py-1 text-xs font-bold uppercase tracking-widest rounded mb-4 inline-block">Nouveauté Nationale</span>
+                    <h2 id="title-text" class="text-5xl font-extrabold mb-6 leading-tight">Valorisons le savoir-faire <span class="text-blue-400">du Kivu</span>.</h2>
+                    <p id="desc-text" class="text-lg text-slate-300 mb-10 leading-relaxed">Découvrez notre sélection de produits locaux premium, certifiés et distribués par Linksmartech.</p>
+                    <button class="bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded transition">Découvrir la gamme</button>
+                </div>
+                
+                <div class="flex-1 w-full max-w-md">
+                    <div class="bg-white p-2 rounded-lg shadow-2xl hover-lift">
+                        <img id="product-img" src="https://placehold.co/600x400/e2e8f0/1e293b?text=Produit+National" alt="Produit" class="rounded w-full h-80 object-cover">
+                        <div class="p-6 text-slate-900">
+                            <h3 id="product-name" class="font-bold text-xl">Miel pur de Turunga</h3>
+                            <p id="product-desc" class="text-sm text-slate-500 mb-4">Récolté artisanalement dans le Nord-Kivu.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-blue-900">$15.00</span>
+                                <button class="bg-yellow-500 hover:bg-yellow-400 text-slate-950 font-bold px-4 py-2 rounded text-sm transition">Ajouter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="py-20 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12 text-center">
+                <h3 class="text-blue-900 font-bold uppercase tracking-widest text-sm mb-2">Nos expertises</h3>
+                <h4 class="text-3xl font-extrabold text-slate-950">Piliers d'Infrastructure & Tech</h4>
+            </div>
+            <div id="carousel" class="carousel-container flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory">
+                <div class="min-w-[320px] snap-center bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition hover-lift">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240b5?auto=format&fit=crop&q=80&w=800" class="h-48 w-full object-cover">
+                    <div class="p-6"><h5 class="font-bold text-lg mb-2">Construction & BTP</h5><p class="text-sm text-gray-600">Infrastructures durables et réhabilitation.</p></div>
+                </div>
+                <div class="min-w-[320px] snap-center bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition hover-lift">
+                    <img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da6a?auto=format&fit=crop&q=80&w=800" class="h-48 w-full object-cover">
+                    <div class="p-6"><h5 class="font-bold text-lg mb-2">Solutions Numériques</h5><p class="text-sm text-gray-600">Transformation digitale et Cloud.</p></div>
+                </div>
+                <div class="min-w-[320px] snap-center bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition hover-lift">
+                    <img src="https://images.unsplash.com/photo-1549421263-504527786435?auto=format&fit=crop&q=80&w=800" class="h-48 w-full object-cover">
+                    <div class="p-6"><h5 class="font-bold text-lg mb-2">Environnement & WASH</h5><p class="text-sm text-gray-600">Eau, assainissement et hygiène.</p></div>
+                </div>
+                <div class="min-w-[320px] snap-center bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition hover-lift">
+                    <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&q=80&w=800" class="h-48 w-full object-cover">
+                    <div class="p-6"><h5 class="font-bold text-lg mb-2">Électricité</h5><p class="text-sm text-gray-600">Réseaux énergétiques et déploiement.</p></div>
+                </div>
+                <div class="min-w-[320px] snap-center bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition hover-lift">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800" class="h-48 w-full object-cover">
+                    <div class="p-6"><h5 class="font-bold text-lg mb-2">Consultance Technique</h5><p class="text-sm text-gray-600">Accompagnement et études stratégiques.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="methodology" class="py-20 bg-slate-100 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h4 class="text-3xl font-extrabold text-slate-950 mb-12">Notre Approche</h4>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded border-t-4 border-blue-900 shadow-sm"><span class="text-4xl font-bold text-blue-200">01</span><h5 class="font-bold text-xl mt-2 mb-2">Diagnostic</h5><p class="text-sm text-gray-600">Analyse approfondie.</p></div>
+                <div class="bg-white p-6 rounded border-t-4 border-blue-900 shadow-sm"><span class="text-4xl font-bold text-blue-200">02</span><h5 class="font-bold text-xl mt-2 mb-2">Conception</h5><p class="text-sm text-gray-600">Élaboration sur mesure.</p></div>
+                <div class="bg-white p-6 rounded border-t-4 border-blue-900 shadow-sm"><span class="text-4xl font-bold text-blue-200">03</span><h5 class="font-bold text-xl mt-2 mb-2">Réalisation</h5><p class="text-sm text-gray-600">Standards de qualité.</p></div>
+                <div class="bg-white p-6 rounded border-t-4 border-blue-900 shadow-sm"><span class="text-4xl font-bold text-blue-200">04</span><h5 class="font-bold text-xl mt-2 mb-2">Accompagnement</h5><p class="text-sm text-gray-600">Pérennité des projets.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-950 text-slate-400 py-12 px-6 text-center">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-xl font-bold text-white mb-4">LINKS<span class="text-blue-500">MARTECH</span></h1>
+            <p>&copy; 2026 Linksmartech - Tous droits réservés.</p>
+            <p class="mt-2 text-xs">Goma, Nord-Kivu, RDC | RCCM: CD-GOM-01-2024-A-002698</p>
+        </div>
+    </footer>
+
+    <script>
+        // Automatic Carousel
+        const carousel = document.getElementById('carousel');
+        setInterval(() => {
+            if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth - 10) {
+                carousel.scrollLeft = 0;
+            } else {
+                carousel.scrollLeft += 320;
+            }
+        }, 3000);
+
+        // Shop Switcher Logic
+        function switchShop(type) {
+            const tabLocal = document.getElementById('tab-local');
+            const tabIntl = document.getElementById('tab-intl');
+            const badge = document.getElementById('badge-text');
+            const title = document.getElementById('title-text');
+            const desc = document.getElementById('desc-text');
+            const img = document.getElementById('product-img');
+            const productName = document.getElementById('product-name');
+            const productDesc = document.getElementById('product-desc');
+
+            if(type === 'local') {
+                tabLocal.classList.add('active-tab');
+                tabIntl.classList.remove('active-tab', 'text-white');
+                tabIntl.classList.add('text-slate-400');
+                
+                badge.innerText = 'Nouveauté Nationale';
+                title.innerHTML = 'Valorisons le savoir-faire <span class="text-blue-400">du Kivu</span>.';
+                desc.innerText = 'Découvrez notre sélection de produits locaux premium, certifiés et distribués par Linksmartech.';
+                img.src = 'https://placehold.co/600x400/e2e8f0/1e293b?text=Produit+National';
+                productName.innerText = 'Miel pur de Turunga';
+                productDesc.innerText = 'Récolté artisanalement dans le Nord-Kivu.';
+            } else {
+                tabIntl.classList.add('active-tab');
+                tabLocal.classList.remove('active-tab');
+                tabIntl.classList.remove('text-slate-400');
+                tabIntl.classList.add('text-white');
+                
+                badge.innerText = 'Innovation Globale';
+                title.innerHTML = 'Technologie de pointe <span class="text-blue-400">mondiale</span>.';
+                desc.innerText = 'Accédez à nos équipements technologiques de précision et solutions importées pour vos projets.';
+                img.src = 'https://placehold.co/600x400/1e293b/e2e8f0?text=Solution+Internationale';
+                productName.innerText = 'Serveur Rack Edge Pro';
+                productDesc.innerText = 'Haute performance pour déploiement réseau.';
+            }
+        }
+    </script>
+</body>
+</html>
