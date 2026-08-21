@@ -3,7 +3,7 @@ declare(strict_types=1);
 require __DIR__ . '/platform-bootstrap.php';
 if (!platform_installed()) { header('Location: /install.php'); exit; }
 $error = ''; $success = false;
-$types = ['company'=>'Entreprise','service_provider'=>'Prestataire de services','ngo'=>'ONG','association'=>'Association','funder'=>'Bailleur de fonds','individual'=>'Particulier'];
+$types = ['company'=>'Entreprise technique','startup'=>'Startup / porteur de projet','service_provider'=>'Prestataire de services','ngo'=>'ONG','association'=>'Association','funder'=>'Bailleur de fonds','individual'=>'Particulier'];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     verify_csrf();
     $name=clean_text($_POST['name']??'',180); $type=clean_text($_POST['type']??'',30);

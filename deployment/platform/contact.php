@@ -27,7 +27,7 @@ $allowed = [
     'Construction & Génie civil', 'Solution informatique', 'Étude & accompagnement',
     "Digitalisation d'entreprise", 'Connexion aux marchés & services',
     'Connexion ONG / bailleurs de fonds', 'Outils de suivi de projets',
-    'Formation & encadrement des équipes', 'Autre demande',
+    'Formation & encadrement des équipes', 'Création d’entreprise technique / startup', 'Autre demande',
 ];
 if (mb_strlen($name) < 2 || mb_strlen($phone) < 7 || mb_strlen($message) < 10) {
     json_response(422, ['error' => 'Veuillez renseigner un nom, un téléphone et un message valides.']);

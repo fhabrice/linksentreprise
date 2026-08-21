@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS contact_requests (
 CREATE TABLE IF NOT EXISTS organizations (
   id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(180) NOT NULL,
-  organization_type ENUM('company','service_provider','ngo','association','funder','individual') NOT NULL,
+  organization_type ENUM('company','startup','service_provider','ngo','association','funder','individual') NOT NULL,
   email VARCHAR(190) NOT NULL,
   phone VARCHAR(40) NOT NULL,
   country VARCHAR(100) NOT NULL,

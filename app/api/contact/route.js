@@ -17,6 +17,7 @@ const allowedServices = new Set([
   'Connexion ONG / bailleurs de fonds',
   'Outils de suivi de projets',
   'Formation & encadrement des équipes',
+  'Création d’entreprise technique / startup',
   'Autre demande',
 ]);
 
