@@ -1,0 +1,26 @@
+INSTALLATION LINKSTECH PLATFORM SUR CPANEL
+
+1. Dans cPanel > MySQL Databases, créez :
+   - une base de données ;
+   - un utilisateur MySQL avec mot de passe ;
+   - ajoutez l’utilisateur à la base avec TOUS LES PRIVILÈGES.
+
+2. Extrayez tout le contenu du ZIP dans la racine du domaine :
+   /home/wqmetrvw/public_html/linksmartec.com
+   Acceptez le remplacement des anciens fichiers.
+
+3. Ouvrez https://linksmartec.com/install.php
+
+4. Entrez les informations MySQL affichées dans cPanel. Les noms incluent souvent le préfixe wqmetrvw_, par exemple :
+   Base : wqmetrvw_linkstech
+   Utilisateur : wqmetrvw_linkuser
+   Hôte : localhost
+
+5. Créez le compte administrateur avec un mot de passe de 12 caractères minimum.
+
+6. Après installation :
+   Administration : https://linksmartec.com/admin/
+   Opportunités : https://linksmartec.com/opportunities.php
+   Inscription des organisations : https://linksmartec.com/register.php
+
+La configuration MySQL est enregistrée dans .platform-config.php et protégée par .htaccess.

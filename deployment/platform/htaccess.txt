@@ -1,0 +1,16 @@
+DirectoryIndex index.html
+Options -Indexes
+
+<FilesMatch "^(\.platform-config\.php|schema\.sql|platform-bootstrap\.php)$">
+  Require all denied
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^$ index.html [L]
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+RewriteRule ^ index.html [L]
+</IfModule>
