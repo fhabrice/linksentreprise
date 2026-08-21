@@ -69,6 +69,7 @@ export default function Home() {
     <div className="container nav-inner">
       <a className="brand" href="#accueil" aria-label="Linkstech - Accueil"><img className="brand-logo" src="/assets/logo-linksmart.svg" alt="LINKSmart Technology — Connecting Minds, Empowering Futures" /></a>
       <div className={`nav-links ${menuOpen ? 'open' : ''}`} id="navLinks" onClick={() => setMenuOpen(false)}><a href="#accueil">Accueil</a><a href="#apropos">À propos</a><a href="#services">Expertises</a><a href="#projets">Projets</a><a href="/opportunities.php">Opportunités</a><a href="/blog.php">Blog</a><a href="#contact" className="btn">Être mis en relation <Icon name="arrow-up-right" size={16} /></a></div>
+      <div className="language-switcher" aria-label="Choisir la langue"><button type="button" data-language="fr" className="active">FR</button><button type="button" data-language="en">EN</button><button type="button" data-language="sw">SW</button></div>
       <button className={menuOpen ? 'menu-btn active' : 'menu-btn'} id="menuBtn" type="button" aria-label={menuOpen ? "Fermer le menu" : "Ouvrir le menu"} aria-expanded={menuOpen} aria-controls="navLinks" onClick={() => setMenuOpen(v => !v)}><Icon name={menuOpen ? "x" : "menu"} /></button>
     </div>
   </nav>

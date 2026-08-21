@@ -1,4 +1,5 @@
 import './globals.css';
+import Script from 'next/script';
 
 export const metadata = {
   metadataBase: new URL('https://linksmartec.com'),
@@ -26,7 +27,7 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <body>{children}</body>
+      <body>{children}<Script src="/assets/language.js" strategy="afterInteractive" /></body>
     </html>
   );
 }
