@@ -24,3 +24,9 @@ INSTALLATION LINKSTECH PLATFORM SUR CPANEL
    Inscription des organisations : https://linksmartec.com/register.php
 
 La configuration MySQL est enregistrée dans .platform-config.php et protégée par .htaccess.
+
+MISE À JOUR D’UNE INSTALLATION EXISTANTE
+Après avoir remplacé les fichiers, ouvrez https://linksmartec.com/upgrade.php et connectez-vous avec votre compte administrateur. Cette étape ajoute le Blog et les profils Startup.
+
+Blog public : https://linksmartec.com/blog.php
+Publication des articles : https://linksmartec.com/admin/?section=blog

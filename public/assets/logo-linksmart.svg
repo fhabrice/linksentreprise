@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 220" role="img" aria-labelledby="title desc">
+  <title id="title">LINKSmart Technology</title>
+  <desc id="desc">Connecting Minds. Empowering Futures.</desc>
+  <defs><style>.navy{stroke:#0b3c61}.orange{stroke:#ed8b23}.fill-navy{fill:#0b3c61}.fill-gray{fill:#74777b}.line{fill:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}</style></defs>
+  <g transform="translate(12 10)">
+    <circle cx="105" cy="103" r="69" class="navy line"/>
+    <ellipse cx="105" cy="103" rx="32" ry="69" class="navy line"/>
+    <path d="M38 87c18 10 42 15 67 15s49-5 67-15M38 119c18-9 42-14 67-14s49 5 67 14M58 55c14 9 30 13 47 13s33-4 47-13M58 151c14-8 30-12 47-12s33 4 47 12" class="navy line"/>
+    <g class="navy line" stroke-width="4">
+      <path d="M59 76h23l11 12v18M49 112h32l12 12h22M72 145h23v-19M116 62v27l17 11h22M110 142v-22l18-14h30"/>
+    </g>
+    <g fill="#fff" stroke="#0b3c61" stroke-width="4"><circle cx="58" cy="76" r="6"/><circle cx="49" cy="112" r="6"/><circle cx="72" cy="145" r="6"/><circle cx="116" cy="62" r="6"/><circle cx="155" cy="100" r="6"/><circle cx="158" cy="106" r="6"/></g>
+    <path d="M20 114C4 58 38 7 91 1" class="orange line" stroke-width="6"/><circle cx="93" cy="1" r="9" fill="#fff" class="orange" stroke-width="6"/>
+    <path d="M190 94c15 58-20 104-72 114" class="orange line" stroke-width="6"/><circle cx="191" cy="94" r="9" fill="#fff" class="orange" stroke-width="6"/><circle cx="116" cy="209" r="9" fill="#fff" class="orange" stroke-width="6"/>
+    <circle cx="20" cy="115" r="9" fill="#fff" class="orange" stroke-width="6"/>
+  </g>
+  <g transform="translate(220 48)">
+    <text x="0" y="54" class="fill-navy" font-family="Arial, Helvetica, sans-serif" font-size="67" font-weight="700" letter-spacing="-2">LINKS<tspan font-size="57" font-weight="500">mart</tspan></text>
+    <g transform="translate(280 -28)" fill="none" stroke="#74777b" stroke-width="4"><rect x="11" y="12" width="36" height="31" rx="6"/><path d="M19 12V4m10 8V4m10 8V4M19 51v-8m10 8v-8m10 8v-8M11 20H3m8 10H3m8 10H3m52-20h-8m8 10h-8m8 10h-8"/><path d="M20 34c0-8 4-13 9-13s9 5 9 13"/></g>
+    <text x="0" y="105" class="fill-gray" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="500" letter-spacing="7">TECHNOLOGY</text>
+    <text x="4" y="146" class="fill-navy" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="500">Connecting Minds. Empowering Futures.</text>
+  </g>
+</svg>
