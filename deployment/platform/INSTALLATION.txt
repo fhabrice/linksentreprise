@@ -1,5 +1,12 @@
 INSTALLATION LINKSTECH PLATFORM SUR CPANEL
 
+IMPORTANT : LE SITE AFFICHE UN 404 ? C’EST SOUVENT L’ANCIENNE APPLICATION NODE.JS.
+1. Dans cPanel, ouvrez « Setup Node.js App ».
+2. S’il existe une application reliée à linksmartec.com, cliquez sur « Stop App » puis « Delete / Destroy ».
+3. Cette application utilise /home/wqmetrvw/linksmartec et intercepte le domaine, ce qui bloque public_html/linksmartec.com et provoque le 404.
+4. Après la suppression, le serveur utilisera normalement le dossier :
+   /home/wqmetrvw/public_html/linksmartec.com
+
 1. Dans cPanel > MySQL Databases, créez :
    - une base de données ;
    - un utilisateur MySQL avec mot de passe ;
@@ -8,13 +15,17 @@ INSTALLATION LINKSTECH PLATFORM SUR CPANEL
 2. Extrayez tout le contenu du ZIP dans la racine du domaine :
    /home/wqmetrvw/public_html/linksmartec.com
    Acceptez le remplacement des anciens fichiers.
+   IMPORTANT : le fichier index.html doit apparaître DIRECTEMENT dans ce dossier.
+   S’il se trouve dans un sous-dossier (ex. linkstech-platform-php/), les fichiers sont mal extraits.
 
-3. Ouvrez https://linksmartec.com/install.php
+3. Dans File Manager, activez « Afficher les fichiers cachés » (Settings / Paramètres).
+   Vérifiez que le fichier .htaccess est bien présent dans :
+   /home/wqmetrvw/public_html/linksmartec.com
+   S’il manque, téléversez-le depuis l’archive (ou créez-le avec les règles contenues dans le dossier).
 
-4. Entrez les informations MySQL affichées dans cPanel. Les noms incluent souvent le préfixe wqmetrvw_, par exemple :
-   Base : wqmetrvw_linkstech
-   Utilisateur : wqmetrvw_linkuser
-   Hôte : localhost
+4. Testez cette adresse :
+   https://linksmartec.com/index.html
+   Si elle affiche le site, le contenu est au bon endroit. Si la racine / renvoie encore 404, l’application Node.js est encore active (voir IMPORTANT ci-dessus).
 
 5. L’installation crée automatiquement l’accès administrateur sécurisé :
    Le code d’accès administrateur est défini côté serveur et ne doit jamais être publié.
