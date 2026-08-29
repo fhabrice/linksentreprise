@@ -1,0 +1,35 @@
+INSTALLATION LINKSTECH PLATFORM SUR CPANEL
+
+1. Dans cPanel > MySQL Databases, créez :
+   - une base de données ;
+   - un utilisateur MySQL avec mot de passe ;
+   - ajoutez l’utilisateur à la base avec TOUS LES PRIVILÈGES.
+
+2. Extrayez tout le contenu du ZIP dans la racine du domaine :
+   /home/wqmetrvw/public_html/linksmartec.com
+   Acceptez le remplacement des anciens fichiers.
+
+3. Ouvrez https://linksmartec.com/install.php
+
+4. Entrez les informations MySQL affichées dans cPanel. Les noms incluent souvent le préfixe wqmetrvw_, par exemple :
+   Base : wqmetrvw_linkstech
+   Utilisateur : wqmetrvw_linkuser
+   Hôte : localhost
+
+5. L’installation crée automatiquement le compte administrateur sécurisé :
+   Nom d’utilisateur : linkstech
+   Mot de passe : links2026
+
+6. Après installation :
+   Administration (accès privé par l’URL, non affiché publiquement) : https://linksmartec.com/admin/
+   Opportunités : https://linksmartec.com/opportunities.php
+   Inscription des organisations : https://linksmartec.com/register.php
+
+La configuration MySQL est enregistrée dans .platform-config.php et protégée par .htaccess.
+L’espace admin n’est plus visible dans le menu ni dans le pied de page : il faut ouvrir directement /admin/ et saisir les identifiants.
+
+MISE À JOUR D’UNE INSTALLATION EXISTANTE
+Après avoir remplacé les fichiers, ouvrez https://linksmartec.com/upgrade.php et connectez-vous avec votre compte administrateur actuel. Cette étape ajoute le Blog, les profils Startup et applique le compte linkstech / links2026.
+
+Blog public : https://linksmartec.com/blog.php
+Publication des articles : https://linksmartec.com/admin/?section=blog

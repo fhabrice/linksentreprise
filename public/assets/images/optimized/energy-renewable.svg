@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600" role="img" aria-label="Solutions d'énergie renouvelable Linkstech">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#071a2c"/>
+      <stop offset=".52" stop-color="#0b2945"/>
+      <stop offset="1" stop-color="#176bff"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#54d6ff"/>
+      <stop offset="1" stop-color="#176bff"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e4a31"/>
+      <stop offset="1" stop-color="#071a2c"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#f6b73c" stop-opacity="1"/>
+      <stop offset=".6" stop-color="#f6b73c" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#f6b73c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#sky)"/>
+  <circle cx="735" cy="118" r="115" fill="url(#sun)" opacity=".35"/>
+  <circle cx="735" cy="118" r="50" fill="#f6b73c"/>
+  <g opacity=".28" stroke="#54d6ff" stroke-width="1.5">
+    <line x1="0" y1="250" x2="900" y2="250"/><line x1="0" y1="300" x2="900" y2="300"/><line x1="0" y1="350" x2="900" y2="350"/>
+  </g>
+  <rect y="420" width="900" height="180" fill="url(#ground)"/>
+  <!-- Solar panels -->
+  <g>
+    <g transform="translate(80 350) skewX(-18)">
+      <rect x="0" y="0" width="220" height="95" rx="6" fill="#10233a" stroke="#54d6ff" stroke-width="3"/>
+      <rect x="10" y="10" width="60" height="30" rx="3" fill="url(#panel)"/>
+      <rect x="78" y="10" width="60" height="30" rx="3" fill="url(#panel)"/>
+      <rect x="146" y="10" width="60" height="30" rx="3" fill="url(#panel)"/>
+      <rect x="10" y="52" width="60" height="30" rx="3" fill="url(#panel)"/>
+      <rect x="78" y="52" width="60" height="30" rx="3" fill="url(#panel)"/>
+      <rect x="146" y="52" width="60" height="30" rx="3" fill="url(#panel)"/>
+    </g>
+    <g transform="translate(330 378) skewX(-18)">
+      <rect x="0" y="0" width="220" height="95" rx="6" fill="#10233a" stroke="#54d6ff" stroke-width="3"/>
+      <rect x="10" y="10" width="60" height="30" rx="3" fill="url(#panel)"/>
+      <rect x="78" y="10" width="60" height="30" rx="3" fill="url(#panel)"/>
+      <rect x="146" y="10" width="60" height="30" rx="3" fill="url(#panel)"/>
+      <rect x="10" y="52" width="60" height="30" rx="3" fill="url(#panel)"/>
+      <rect x="78" y="52" width="60" height="30" rx="3" fill="url(#panel)"/>
+      <rect x="146" y="52" width="60" height="30" rx="3" fill="url(#panel)"/>
+    </g>
+  </g>
+  <!-- Wind turbine -->
+  <g transform="translate(630 140)">
+    <rect x="24" y="120" width="12" height="270" rx="6" fill="#dfe9ef"/>
+    <circle cx="30" cy="120" r="14" fill="#54d6ff"/>
+    <g stroke="#dfe9ef" stroke-width="10" stroke-linecap="round">
+      <line x1="30" y1="120" x2="30" y2="28"/>
+      <line x1="30" y1="120" x2="112" y2="90"/>
+      <line x1="30" y1="120" x2="-52" y2="90"/>
+    </g>
+  </g>
+  <!-- Houses -->
+  <g transform="translate(185 250)">
+    <rect x="0" y="90" width="120" height="85" rx="6" fill="#0b2945"/>
+    <polygon points="-10,90 60,30 130,90" fill="#176bff"/>
+    <rect x="42" y="120" width="38" height="55" rx="3" fill="#54d6ff"/>
+    <rect x="80" y="120" width="26" height="55" rx="3" fill="#f6b73c"/>
+  </g>
+  <g transform="translate(445 295)">
+    <rect x="0" y="80" width="105" height="70" rx="6" fill="#0b2945"/>
+    <polygon points="-8,80 52,25 113,80" fill="#54d6ff"/>
+    <rect x="38" y="105" width="28" height="45" rx="3" fill="#f6b73c"/>
+  </g>
+  <!-- energy bolt -->
+  <g transform="translate(810 305)">
+    <polygon points="10,0 0,52 28,52 14,110 58,38 28,38 46,0" fill="#f6b73c" stroke="#071a2c" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+</svg>

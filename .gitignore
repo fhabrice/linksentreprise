@@ -1,0 +1,8 @@
+node_modules/
+.next/
+out/
+.env*
+!.env.example
+data/contact-requests.json
+npm-debug.log*
+.DS_Store
