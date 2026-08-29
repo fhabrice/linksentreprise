@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="ltitle ldesc" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
-  <title id="ltitle">LINKSTECH — LINKSMARTTECHNOLOGY</title>
+  <title id="ltitle">LINKSTECH — LINKSMARTECH</title>
   <desc id="ldesc">Connecting Minds. Empowering Futures.</desc>
   <defs>
     <style>
@@ -12,34 +12,34 @@
   </defs>
 
   <!-- Emblem -->
-  <g transform="translate(15 15)">
-    <circle cx="170" cy="160" r="138" fill="none" stroke="#0b4266" stroke-width="8"/>
+  <g transform="translate(15 18)">
+    <circle cx="170" cy="158" r="136" fill="none" stroke="#0b4266" stroke-width="8"/>
     <!-- Orange arc top-left -->
-    <path d="M18 176C8 85 72 27 170 25" fill="none" stroke="#ec8b24" stroke-width="9" stroke-linecap="round"/>
+    <path d="M20 174C10 85 72 28 168 25" fill="none" stroke="#ec8b24" stroke-width="9" stroke-linecap="round"/>
     <circle cx="166" cy="25" r="17" fill="#ffffff" stroke="#ec8b24" stroke-width="9"/>
     <!-- Green arc bottom-right -->
-    <path d="M303 150c19 88-35 145-105 155" fill="none" stroke="#4a8a2a" stroke-width="9" stroke-linecap="round"/>
-    <circle cx="200" cy="306" r="17" fill="#ffffff" stroke="#4a8a2a" stroke-width="9"/>
+    <path d="M303 148c18 88-35 143-105 153" fill="none" stroke="#4a8a2a" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="198" cy="303" r="17" fill="#ffffff" stroke="#4a8a2a" stroke-width="9"/>
 
     <!-- Buildings -->
     <g fill="#0b4266">
-      <polygon points="70,175 70,110 105,78 105,175"/>
-      <polygon points="145,175 145,60 200,18 200,175"/>
+      <polygon points="68,175 68,110 104,78 104,175"/>
+      <polygon points="142,175 142,60 198,18 198,175"/>
     </g>
-    <rect x="70" y="118" width="30" height="18" fill="#ffffff"/>
+    <rect x="70" y="118" width="28" height="18" fill="#ffffff"/>
     <rect x="160" y="68" width="10" height="16" fill="#ffffff"/>
     <rect x="182" y="68" width="10" height="16" fill="#ffffff"/>
 
     <!-- Wind turbine -->
     <g stroke="#4a8a2a" stroke-width="10" stroke-linecap="round">
-      <line x1="215" y1="180" x2="215" y2="70"/>
-      <line x1="215" y1="80" x2="188" y2="48"/>
-      <line x1="215" y1="80" x2="242" y2="48"/>
+      <line x1="220" y1="180" x2="220" y2="70"/>
+      <line x1="220" y1="80" x2="193" y2="48"/>
+      <line x1="220" y1="80" x2="247" y2="48"/>
     </g>
-    <circle cx="215" cy="75" r="11" fill="#ffffff" stroke="#4a8a2a" stroke-width="8"/>
+    <circle cx="220" cy="75" r="11" fill="#ffffff" stroke="#4a8a2a" stroke-width="8"/>
 
     <!-- Solar panels -->
-    <g transform="translate(248 160)">
+    <g transform="translate(252 158)">
       <rect x="0" y="0" width="62" height="36" rx="3" fill="#ec8b24"/>
       <g stroke="#ffffff" stroke-width="3">
         <line x1="0" y1="12" x2="62" y2="12"/>
@@ -53,29 +53,30 @@
 
     <!-- Technology circuit nodes -->
     <g fill="#ffffff" stroke="#0b4266" stroke-width="6">
-      <circle cx="88" cy="242" r="10"/>
-      <circle cx="110" cy="292" r="10"/>
-      <circle cx="162" cy="252" r="10"/>
-      <circle cx="190" cy="288" r="10"/>
-      <circle cx="233" cy="240" r="10"/>
+      <circle cx="86" cy="242" r="10"/>
+      <circle cx="108" cy="292" r="10"/>
+      <circle cx="160" cy="252" r="10"/>
+      <circle cx="188" cy="288" r="10"/>
+      <circle cx="232" cy="240" r="10"/>
     </g>
     <g fill="none" stroke="#0b4266" stroke-width="6" stroke-linecap="round">
-      <path d="M88 232v-18h22"/>
-      <path d="M110 282v-12h52"/>
-      <path d="M162 242v-30h71"/>
-      <path d="M190 278v-20h43"/>
+      <path d="M86 232v-18h22"/>
+      <path d="M108 282v-12h52"/>
+      <path d="M160 242v-30h72"/>
+      <path d="M188 278v-20h44"/>
     </g>
   </g>
 
   <!-- Text -->
-  <g transform="translate(455 160)">
+  <g transform="translate(445 145)">
     <text x="0" y="0" font-size="106" font-weight="800" letter-spacing="-3">
       <tspan fill="#0b4266">LINKS</tspan><tspan fill="#4a8a2a">TECH</tspan>
     </text>
-    <text x="4" y="78" font-size="32" font-weight="600" letter-spacing="7" fill="#6f767e">LINKSMARTTECHNOLOGY</text>
-    <g transform="translate(0 138)">
-      <path d="M0 0h42M580 0h42" stroke="#4a8a2a" stroke-width="5" stroke-linecap="round"/>
-      <text x="60" y="0" font-size="30" font-weight="600" fill="#0b4266">Connecting Minds. Empowering Futures.</text>
-    </g>
+    <!-- LINKSMARTECH line with green dashes -->
+    <path d="M0 62h34M622 62h34" stroke="#4a8a2a" stroke-width="5" stroke-linecap="round"/>
+    <text x="45" y="72" font-size="35" font-weight="600" letter-spacing="8" fill="#6f767e">LINKSMARTECH</text>
+    <!-- Tagline line with green dashes -->
+    <path d="M0 132h52M702 132h52" stroke="#4a8a2a" stroke-width="5" stroke-linecap="round"/>
+    <text x="66" y="132" font-size="30" font-weight="600" fill="#0b4266">Connecting Minds. Empowering Futures.</text>
   </g>
 </svg>
