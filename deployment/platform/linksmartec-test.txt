@@ -1,0 +1,7 @@
+LINKSTECH - FICHIER TEST PLACEMENT
+===============================
+Si ce fichier s'affiche sur https://linksmartec.com/linksmartec-test.txt,
+alors les fichiers du site sont au bon endroit.
+
+Si vous obtenez 404, le dossier où sont placés les fichiers n'est pas
+le dossier du domaine, OU une application Node.js bloque encore le domaine.
