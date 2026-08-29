@@ -16,9 +16,8 @@ INSTALLATION LINKSTECH PLATFORM SUR CPANEL
    Utilisateur : wqmetrvw_linkuser
    Hôte : localhost
 
-5. L’installation crée automatiquement le compte administrateur sécurisé :
-   Nom d’utilisateur : linkstech
-   Mot de passe : links2026
+5. L’installation crée automatiquement l’accès administrateur sécurisé :
+   Code d’accès : 091989
 
 6. Après installation :
    Administration (accès privé par l’URL, non affiché publiquement) : https://linksmartec.com/admin/
@@ -29,7 +28,7 @@ La configuration MySQL est enregistrée dans .platform-config.php et protégée 
 L’espace admin n’est plus visible dans le menu ni dans le pied de page : il faut ouvrir directement /admin/ et saisir les identifiants.
 
 MISE À JOUR D’UNE INSTALLATION EXISTANTE
-Après avoir remplacé les fichiers, ouvrez https://linksmartec.com/upgrade.php et connectez-vous avec votre compte administrateur actuel. Cette étape ajoute le Blog, les profils Startup et applique le compte linkstech / links2026.
+Après avoir remplacé les fichiers, ouvrez https://linksmartec.com/upgrade.php et connectez-vous avec votre compte administrateur actuel. Cette étape ajoute le Blog, les profils Startup et applique le code d’accès administrateur 091989.
 
 Blog public : https://linksmartec.com/blog.php
 Publication des articles : https://linksmartec.com/admin/?section=blog

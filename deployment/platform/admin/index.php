@@ -6,16 +6,14 @@ header('Pragma: no-cache');
 if (!platform_installed()) { header('Location: /install.php'); exit; }
 $error='';
 if(isset($_GET['logout'])){session_destroy();header('Location: /admin/');exit;}
+$accessCode='091989';
 if(empty($_SESSION['admin_id']) && $_SERVER['REQUEST_METHOD']==='POST' && ($_POST['action']??'')==='login'){
-    verify_csrf(); $username=trim((string)($_POST['username']??'')); $password=(string)($_POST['password']??'');
-    try { $q=db()->prepare('SELECT * FROM admins WHERE username=? LIMIT 1'); }
-    catch(Throwable $e) { $q=db()->prepare('SELECT * FROM admins WHERE email=? LIMIT 1'); }
-    $q->execute([$username]); $admin=$q->fetch();
-    if($admin && password_verify($password,$admin['password_hash'])){session_regenerate_id(true);$_SESSION['admin_id']=$admin['id'];$_SESSION['admin_name']=$admin['name'];header('Location: /admin/');exit;}
-    $error='Identifiants incorrects.';
+    verify_csrf(); $code=trim((string)($_POST['code']??''));
+    if(hash_equals($accessCode,$code)){session_regenerate_id(true);$_SESSION['admin_id']='access';$_SESSION['admin_name']='LINKSTECH';header('Location: /admin/');exit;}
+    $error='Code d’accès incorrect.';
 }
 if(empty($_SESSION['admin_id'])):
-?><!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Administration LINKSTECH</title><style>*{box-sizing:border-box}body{margin:0;background:#071a2c;font-family:Arial;min-height:100vh;display:grid;place-items:center}.box{width:min(430px,92%);background:#fff;padding:35px;border-radius:16px}h1{margin-top:0}label{display:block;font-weight:bold;margin:15px 0 7px}input{width:100%;padding:13px;border:1px solid #dfe6eb;border-radius:8px}button{width:100%;margin-top:20px;padding:14px;border:0;border-radius:8px;background:#176bff;color:#fff;font-weight:bold}.error{color:#a21b1b}</style></head><body><form class="box" method="post"><h1>Espace administrateur</h1><p>Espace privé : gestion des demandes, profils, opportunités, blog et partenariats LINKSTECH.</p><?php if($error):?><p class="error"><?=e($error)?></p><?php endif;?><input type="hidden" name="csrf" value="<?=e(csrf_token())?>"><input type="hidden" name="action" value="login"><label>Nom d’utilisateur</label><input type="text" name="username" autocomplete="username" required><label>Mot de passe</label><input type="password" name="password" required><button>Se connecter</button></form></body></html><?php exit; endif;
+?><!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Administration LINKSTECH</title><style>*{box-sizing:border-box}body{margin:0;background:#071a2c;font-family:Arial;min-height:100vh;display:grid;place-items:center}.box{width:min(430px,92%);background:#fff;padding:35px;border-radius:16px}h1{margin-top:0}label{display:block;font-weight:bold;margin:15px 0 7px}input{width:100%;padding:13px;border:1px solid #dfe6eb;border-radius:8px}button{width:100%;margin-top:20px;padding:14px;border:0;border-radius:8px;background:#176bff;color:#fff;font-weight:bold}.error{color:#a21b1b}</style></head><body><form class="box" method="post"><h1>Espace administrateur</h1><p>Espace privé : gestion des demandes, profils, opportunités, blog et partenariats LINKSTECH.</p><p style="color:#60707f;font-size:13px">Entrez le code d'accès administrateur pour continuer.</p><?php if($error):?><p class="error"><?=e($error)?></p><?php endif;?><input type="hidden" name="csrf" value="<?=e(csrf_token())?>"><input type="hidden" name="action" value="login"><label>Code d’accès</label><input type="password" name="code" inputmode="numeric" autocomplete="current-password" autofocus required><button>Se connecter</button></form></body></html><?php exit; endif;
 admin_required();
 $allowedRequest=['new','in_progress','connected','closed'];$allowedOrg=['pending','approved','rejected'];$allowedOpp=['draft','published','closed'];$allowedBlog=['draft','published'];
 if($_SERVER['REQUEST_METHOD']==='POST'){

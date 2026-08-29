@@ -1,23 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 220" role="img" aria-labelledby="title desc">
-  <title id="title">LINKSmart Technology</title>
-  <desc id="desc">Connecting Minds. Empowering Futures.</desc>
-  <defs><style>.navy{stroke:#0b3c61}.orange{stroke:#ed8b23}.fill-navy{fill:#0b3c61}.fill-gray{fill:#74777b}.line{fill:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}</style></defs>
-  <g transform="translate(12 10)">
-    <circle cx="105" cy="103" r="69" class="navy line"/>
-    <ellipse cx="105" cy="103" rx="32" ry="69" class="navy line"/>
-    <path d="M38 87c18 10 42 15 67 15s49-5 67-15M38 119c18-9 42-14 67-14s49 5 67 14M58 55c14 9 30 13 47 13s33-4 47-13M58 151c14-8 30-12 47-12s33 4 47 12" class="navy line"/>
-    <g class="navy line" stroke-width="4">
-      <path d="M59 76h23l11 12v18M49 112h32l12 12h22M72 145h23v-19M116 62v27l17 11h22M110 142v-22l18-14h30"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="ltitle ldesc" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+  <title id="ltitle">LINKSTECH — LINKSMARTTECHNOLOGY</title>
+  <desc id="ldesc">Connecting Minds. Empowering Futures.</desc>
+  <defs>
+    <style>
+      .navy{fill:#0b4266;stroke:#0b4266}
+      .green{fill:#4a8a2a;stroke:#4a8a2a}
+      .gray{fill:#6f767e}
+      .orange{fill:#ec8b24;stroke:#ec8b24}
+      .sw{fill:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+
+  <!-- Emblem -->
+  <g transform="translate(15 15)">
+    <circle cx="170" cy="160" r="138" fill="none" stroke="#0b4266" stroke-width="8"/>
+    <!-- Orange arc top-left -->
+    <path d="M18 176C8 85 72 27 170 25" fill="none" stroke="#ec8b24" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="166" cy="25" r="17" fill="#ffffff" stroke="#ec8b24" stroke-width="9"/>
+    <!-- Green arc bottom-right -->
+    <path d="M303 150c19 88-35 145-105 155" fill="none" stroke="#4a8a2a" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="200" cy="306" r="17" fill="#ffffff" stroke="#4a8a2a" stroke-width="9"/>
+
+    <!-- Buildings -->
+    <g fill="#0b4266">
+      <polygon points="70,175 70,110 105,78 105,175"/>
+      <polygon points="145,175 145,60 200,18 200,175"/>
     </g>
-    <g fill="#fff" stroke="#0b3c61" stroke-width="4"><circle cx="58" cy="76" r="6"/><circle cx="49" cy="112" r="6"/><circle cx="72" cy="145" r="6"/><circle cx="116" cy="62" r="6"/><circle cx="155" cy="100" r="6"/><circle cx="158" cy="106" r="6"/></g>
-    <path d="M20 114C4 58 38 7 91 1" class="orange line" stroke-width="6"/><circle cx="93" cy="1" r="9" fill="#fff" class="orange" stroke-width="6"/>
-    <path d="M190 94c15 58-20 104-72 114" class="orange line" stroke-width="6"/><circle cx="191" cy="94" r="9" fill="#fff" class="orange" stroke-width="6"/><circle cx="116" cy="209" r="9" fill="#fff" class="orange" stroke-width="6"/>
-    <circle cx="20" cy="115" r="9" fill="#fff" class="orange" stroke-width="6"/>
+    <rect x="70" y="118" width="30" height="18" fill="#ffffff"/>
+    <rect x="160" y="68" width="10" height="16" fill="#ffffff"/>
+    <rect x="182" y="68" width="10" height="16" fill="#ffffff"/>
+
+    <!-- Wind turbine -->
+    <g stroke="#4a8a2a" stroke-width="10" stroke-linecap="round">
+      <line x1="215" y1="180" x2="215" y2="70"/>
+      <line x1="215" y1="80" x2="188" y2="48"/>
+      <line x1="215" y1="80" x2="242" y2="48"/>
+    </g>
+    <circle cx="215" cy="75" r="11" fill="#ffffff" stroke="#4a8a2a" stroke-width="8"/>
+
+    <!-- Solar panels -->
+    <g transform="translate(248 160)">
+      <rect x="0" y="0" width="62" height="36" rx="3" fill="#ec8b24"/>
+      <g stroke="#ffffff" stroke-width="3">
+        <line x1="0" y1="12" x2="62" y2="12"/>
+        <line x1="0" y1="24" x2="62" y2="24"/>
+        <line x1="21" y1="0" x2="21" y2="36"/>
+        <line x1="42" y1="0" x2="42" y2="36"/>
+      </g>
+      <path d="M20 36v16" stroke="#0b4266" stroke-width="7" stroke-linecap="round"/>
+      <line x1="8" y1="54" x2="52" y2="54" stroke="#0b4266" stroke-width="8" stroke-linecap="round"/>
+    </g>
+
+    <!-- Technology circuit nodes -->
+    <g fill="#ffffff" stroke="#0b4266" stroke-width="6">
+      <circle cx="88" cy="242" r="10"/>
+      <circle cx="110" cy="292" r="10"/>
+      <circle cx="162" cy="252" r="10"/>
+      <circle cx="190" cy="288" r="10"/>
+      <circle cx="233" cy="240" r="10"/>
+    </g>
+    <g fill="none" stroke="#0b4266" stroke-width="6" stroke-linecap="round">
+      <path d="M88 232v-18h22"/>
+      <path d="M110 282v-12h52"/>
+      <path d="M162 242v-30h71"/>
+      <path d="M190 278v-20h43"/>
+    </g>
   </g>
-  <g transform="translate(220 48)">
-    <text x="0" y="54" class="fill-navy" font-family="Arial, Helvetica, sans-serif" font-size="67" font-weight="700" letter-spacing="-2">LINKS<tspan font-size="57" font-weight="500">mart</tspan></text>
-    <g transform="translate(280 -28)" fill="none" stroke="#74777b" stroke-width="4"><rect x="11" y="12" width="36" height="31" rx="6"/><path d="M19 12V4m10 8V4m10 8V4M19 51v-8m10 8v-8m10 8v-8M11 20H3m8 10H3m8 10H3m52-20h-8m8 10h-8m8 10h-8"/><path d="M20 34c0-8 4-13 9-13s9 5 9 13"/></g>
-    <text x="0" y="105" class="fill-gray" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="500" letter-spacing="7">TECHNOLOGY</text>
-    <text x="4" y="146" class="fill-navy" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="500">Connecting Minds. Empowering Futures.</text>
+
+  <!-- Text -->
+  <g transform="translate(455 160)">
+    <text x="0" y="0" font-size="106" font-weight="800" letter-spacing="-3">
+      <tspan fill="#0b4266">LINKS</tspan><tspan fill="#4a8a2a">TECH</tspan>
+    </text>
+    <text x="4" y="78" font-size="32" font-weight="600" letter-spacing="7" fill="#6f767e">LINKSMARTTECHNOLOGY</text>
+    <g transform="translate(0 138)">
+      <path d="M0 0h42M580 0h42" stroke="#4a8a2a" stroke-width="5" stroke-linecap="round"/>
+      <text x="60" y="0" font-size="30" font-weight="600" fill="#0b4266">Connecting Minds. Empowering Futures.</text>
+    </g>
   </g>
 </svg>
